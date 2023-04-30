@@ -29,7 +29,7 @@
     "url": "https://github.com/sponsors/Zehir"
   },
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.10.0",
     "@actions/github": "^5.0.0",
     "got": "^11.8.2",
     "node-html-parser": "^5.0.0",
