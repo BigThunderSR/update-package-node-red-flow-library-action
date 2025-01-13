@@ -34,7 +34,7 @@
     "got": "^14.4.5",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^7.0.1",
-    "tough-cookie": "^5.0.0"
+    "tough-cookie": "^5.1.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
