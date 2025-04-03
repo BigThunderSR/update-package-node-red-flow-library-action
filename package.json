@@ -31,7 +31,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
-    "got": "^14.4.6",
+    "got": "^14.4.7",
     "node-fetch": "^3.3.2",
     "node-html-parser": "^7.0.1",
     "tough-cookie": "^5.1.2"
