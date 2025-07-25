@@ -37,7 +37,7 @@
     "tough-cookie": "^5.1.2"
   },
   "devDependencies": {
-    "jest": "^30.0.4",
+    "jest": "^30.0.5",
     "nyc": "^17.1.0"
   }
 }
