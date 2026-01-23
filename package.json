@@ -1,6 +1,6 @@
 {
   "name": "update-package-node-red-flow-library-action-fork",
-  "version": "1.3.16",
+  "version": "1.3.17",
   "description": "Update or add a Node-RED package on the Node-RED flow library (flows.nodered.org).",
   "main": "index.js",
   "scripts": {
