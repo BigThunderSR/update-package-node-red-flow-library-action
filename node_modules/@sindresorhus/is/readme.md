@@ -575,6 +575,31 @@ is.any([is.boolean, is.number], 'unicorns', [], new Map());
 //=> false
 ```
 
+##### .any(predicate[])
+
+Using an array of `predicate[]` without values, returns a combined type guard that checks if a value matches **any** of the predicates:
+
+```js
+const isStringOrNumber = is.any([is.string, is.number]);
+
+isStringOrNumber('hello');
+//=> true
+
+isStringOrNumber(123);
+//=> true
+
+isStringOrNumber(true);
+//=> false
+```
+
+This is useful for composing with other methods like `is.optional`:
+
+```js
+is.optional(value, is.any([is.string, is.number]));
+```
+
+An empty predicate array currently returns a predicate that always returns `false`. This will throw in the next major release.
+
 ##### .all(predicate, ...values)
 
 Returns `true` if **all** of the input `values` returns true in the `predicate`:
@@ -586,6 +611,28 @@ is.all(is.object, {}, new Map(), new Set());
 is.all(is.string, '🦄', [], 'unicorns');
 //=> false
 ```
+
+##### .all(predicate[])
+
+Using an array of `predicate[]` without values, returns a combined type guard that checks if a value matches **all** of the predicates:
+
+```js
+const isArrayAndNonEmpty = is.all([is.array, is.nonEmptyArray]);
+
+isArrayAndNonEmpty(['hello']);
+//=> true
+
+isArrayAndNonEmpty([]);
+//=> false
+```
+
+This is useful for composing with other methods like `is.optional`:
+
+```js
+is.optional(value, is.all([is.object, is.plainObject]));
+```
+
+An empty predicate array currently returns a predicate that always returns `true`. This will throw in the next major release.
 
 ##### .optional(value, predicate)
 
