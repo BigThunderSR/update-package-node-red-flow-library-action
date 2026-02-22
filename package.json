@@ -29,7 +29,7 @@
     }
   ],
   "dependencies": {
-    "@actions/core": "^2.0.3",
+    "@actions/core": "^3.0.0",
     "@actions/github": "^7.0.0",
     "got": "^14.6.6",
     "node-html-parser": "^7.0.2",
