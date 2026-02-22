@@ -46,7 +46,7 @@ jobs:
           token: ${{ secrets.NPM_TOKEN }}
       - if: steps.publish.outputs.type != 'none'
         name: Update Node-RED flow-library
-        uses: BigThunderSR/update-package-node-red-flow-library-action@v1.3.17
+        uses: BigThunderSR/update-package-node-red-flow-library-action@v1.3.18
         continue-on-error: true
         with:
           package-name: 'node-red-contrib-onstar2'
