@@ -25,7 +25,7 @@ const flowLibraryUrl = 'https://flows.nodered.org/add/node';
             return;
         }
         try {
-            const { got } = await import("got");
+            const got = (await import("got")).default;
             const cookieJar = new CookieJar();
             const response = await got(flowLibraryUrl, { cookieJar });
             const root = parse(response.body);
