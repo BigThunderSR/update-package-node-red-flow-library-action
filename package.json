@@ -31,7 +31,7 @@
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/github": "^9.1.1",
-    "got": "^15.0.3",
+    "got": "^15.0.5",
     "node-html-parser": "^7.1.0",
     "tough-cookie": "^6.0.1"
   },
