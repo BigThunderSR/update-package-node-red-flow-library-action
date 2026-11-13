@@ -33,7 +33,7 @@
     "@actions/github": "^9.1.1",
     "got": "^16.0.0",
     "node-html-parser": "^9.0.4",
-    "tough-cookie": "^6.0.2"
+    "tough-cookie": "^6.1.0"
   },
   "devDependencies": {
     "c8": "^12.0.0"
